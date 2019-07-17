@@ -3,64 +3,301 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 900px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.navbar {
+  margin: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: gray;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.heading img {
+  margin-top: 10px;
+}
+
+h1 {
+  padding: 61px;
+  font-size: 75px;
+  width: 49%;
+  vertical-align: top;
+}
+
+.top-image {
+  margin-right: 15px;
+}
+
+button {
+  font-size: 25px;
+  margin-left: 81px;
+  margin-bottom: 50px;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-content {
+  display: flex;
+  align-content: space-between;
+}
+
+.align {
+  margin: 0px;
+  padding: 13px;
+}
+
+.top {
+  width: 900px;
+  border-top: 1px solid gray;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  display: flex;
+}
+
+.middle-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contact {
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+/*Beginning CSS for Services page*/
+
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+hr {
+  display: block;
+  margin-end: auto;
+  margin-start: auto;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+}
+.row-1 {
+  display: flex;
+}
+
+.row-2 {
+  display: flex;
+}
+
+.row-3 {
+  display: flex;
+}
+
+.row-4 {
+  display: flex;
+}
+
+.lower-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: white;
+  margin: 40px 0px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  height: 30px;
+  width: 150px;
+  border: 1px solid black;
+  font-size: 13px;
+}
+
+.boxes {
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid black;
+  background: #eeeeee;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
